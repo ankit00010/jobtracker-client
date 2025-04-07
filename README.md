@@ -146,7 +146,7 @@ npm run dev
 
 **Ankit Mishra**  
 📧 ankitmish83@gmail.com  
-🔗 [LinkedIn](https://linkedin.com/in/ankit00010) | [GitHub](https://github.com/ankit00010)
+🔗[LinkedIn](https://www.linkedin.com/in/ankit00010/) | [GitHub](https://github.com/ankit00010)
 
 ---
 
