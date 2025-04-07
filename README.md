@@ -1,36 +1,156 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📘 Job Tracker
 
-## Getting Started
+Job Tracker is a full-stack web application designed to help users **track, manage, and stay organized** during their job search journey. With Job Tracker, users can log every job they've applied for, categorize them by status and type, and easily update or review their application progress. The goal is to simplify job tracking and provide a central hub to manage the entire application pipeline effectively.
 
-First, run the development server:
+🔗 **Live Preview:** [https://job-tracker-client-plum.vercel.app/login](https://job-tracker-client-plum.vercel.app/login)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+🖥️ **Client Repo:** [GitHub - jobtracker-client](https://github.com/ankit00010/jobtracker-client.git)  
+🛠️ **Server Repo:** [GitHub - jobtracker-server](https://github.com/ankit00010/jobtracker-server.git)
+
+---
+
+## ✨ Features
+
+- ✅ Add a new job entry
+- 📝 Edit and update existing job details
+- ❌ Delete job applications
+- 🔍 Search through job listings
+- 📁 View all job entries in a clean UI
+- 🔃 Pagination for better performance
+- 🧫 Filter by **Job Type** and **Status**
+
+---
+
+## 🛠 Tech Stack Used
+
+### 🌐 Frontend
+- **Next.js**
+- **TypeScript**
+
+### 📁 Backend
+- **Node.js**
+- **Express.js**
+- **TypeScript**
+- **Prisma ORM**
+- **PostgreSQL**
+- **JWT for Authentication**
+
+---
+
+## 📂 Folder Structure
+
+### Client
+```
+src
+├── app
+│   ├── add-job
+│   ├── edit-job
+│   │   └── [id]
+│   ├── job
+│   │   └── [id]
+│   ├── login
+│   └── register
+├── component
+│   ├── Header
+│   ├── input
+│   │   ├── dateInput
+│   │   ├── dropDown
+│   │   └── inputText
+│   ├── pagination
+│   └── pop-up
+├── container
+│   ├── add-job
+│   ├── edit-job
+│   ├── home
+│   ├── home-footer
+│   ├── list-view
+│   ├── login
+│   ├── register
+│   └── view-job
+├── context
+├── public
+├── services
+└── types
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Server
+```
+src
+├── config
+├── constants
+├── middleware
+└── modules
+    ├── auth
+    │   ├── controller
+    │   ├── models
+    │   ├── repository
+    │   └── routes
+    └── user
+        ├── controller
+        ├── models
+        ├── repository
+        └── routes
+prisma
+└── migrations
+    └── 20250406161819_updated_job_fields
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🥪 Local Setup Instructions
 
-## Learn More
+### 1. Clone the Repos
+```bash
+git clone https://github.com/ankit00010/jobtracker-client.git
+git clone https://github.com/ankit00010/jobtracker-server.git
+```
 
-To learn more about Next.js, take a look at the following resources:
+### 2. Install Dependencies
+```bash
+cd jobtracker-client
+npm install
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+cd ../jobtracker-server
+npm install
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 3. Configure Environment Variables
+Create a `.env` file in the `jobtracker-server` folder:
+```env
+DATABASE_URL=postgresql://<username>:<password>@localhost:5432/jobtracker
+JWT_SECRET=your_jwt_secret
+PORT=5000
+```
 
-## Deploy on Vercel
+### 4. Run Prisma Migrations
+```bash
+cd jobtracker-server
+npx prisma migrate dev --name init
+npx prisma generate
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 5. Start Both Servers
+```bash
+# Start backend
+cd jobtracker-server
+npm run dev
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+# Start frontend
+cd ../jobtracker-client
+npm run dev
+```
+
+---
+
+## ✨ Author
+
+**Ankit Mishra**  
+📧 ankitmish83@gmail.com  
+🔗 [LinkedIn](https://linkedin.com/in/ankit00010) | [GitHub](https://github.com/ankit00010)
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
