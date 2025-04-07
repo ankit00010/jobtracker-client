@@ -1,0 +1,66 @@
+.dropdown-container {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Label Styling */
+.dropdown-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 4px;
+}
+
+/* Wrapper for select + icon */
+.dropdown-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+/* Drop Down Select Styling */
+.dropdown-select {
+  width: 100%;
+  padding: 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: white;
+  color: #333;
+  outline: none;
+  appearance: none;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+/* Icon styling */
+.dropdown-icon {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+  color: #666;
+  pointer-events: none;
+  font-size: 18px;
+}
+
+/* Hover + Focus Effects */
+.dropdown-select:hover,
+.dropdown-select:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 4px rgba(0, 123, 255, 0.5);
+}
+
+/* Option Styling */
+.dropdown-select option {
+  font-size: 14px;
+  padding: 5px;
+}
+
+.filter-dropdown {
+  width: 150px;
+}
+
+
+

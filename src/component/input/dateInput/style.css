@@ -1,0 +1,93 @@
+.date-input-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+  }
+  
+  .date-input-label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 6px;
+    text-align: left;
+    display: block;
+  }
+  
+  .date-picker-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: #fff;
+    padding: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .date-picker-container:hover {
+    border-color: black;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .date-input-field {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 16px;
+    color: black;
+    cursor: pointer;
+  }
+  
+  .calendar-icon {
+    font-size: 20px;
+    color: #666;
+    margin-left: auto;
+  }
+  
+  .calendar-icon:hover {
+    color: black;
+  }
+  
+  /* Inline Calendar */
+  .calendar-container {
+    position: relative;
+    margin-top: 8px;
+    z-index: 10;
+  }
+  
+  .react-calendar {
+    width: 100%;
+    max-width: 300px;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+  }
+  
+  .react-calendar__tile {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .react-calendar__tile--active {
+    background: black;
+    color: white;
+    border-radius: 5px;
+  }
+  
+  /* Error Styling */
+  .date-input-error {
+    border-color: red !important;
+    box-shadow: 0 4px 12px rgba(255, 0, 0, 0.3);
+  }
+  
+  .date-error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+    margin-left: 5px;
+  }
+  

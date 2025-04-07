@@ -1,0 +1,90 @@
+* {
+  font-family: "Poppins", sans-serif; /* Clean and modern font */
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.input-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 6px;
+  text-align: left;
+  display: block;
+}
+
+.input-field {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: #fff;
+  color: black;
+  outline: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.input-field:focus {
+  border-color: black;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Error Styling */
+.input-error {
+  border-color: red !important;
+  box-shadow: 0 4px 12px rgba(255, 0, 0, 0.3);
+}
+
+
+/* Text area styling  */
+
+.text-area{
+  width: 100%;
+  min-height: 100px;
+  resize: vertical;
+  outline: none;
+  transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.error-message {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+/* Password Field Container */
+.password-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+
+.password-container button {
+  position: absolute;
+  right: 12px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  color: #666;
+  transition: color 0.3s ease;
+}
+
+.password-container button:hover {
+  color: black;
+}
+
+.search {
+  max-width: 400px;
+}
+

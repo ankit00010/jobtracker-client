@@ -1,0 +1,72 @@
+/* General Styles */
+.page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.addjob-container {
+  width: 100%;
+  max-width: 800px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Form Grid */
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+}
+
+/* Adjustments for larger screens */
+@media (min-width: 768px) {
+  .form-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+
+/* Button Container */
+.addjob-btn-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.job-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.cancel-btn {
+  background: #ccc;
+  color: #333;
+}
+
+.save-btn {
+  background: #007bff;
+  color: #fff;
+}
+
+/* Responsive Buttons */
+@media (max-width: 480px) {
+  .addjob-btn-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
