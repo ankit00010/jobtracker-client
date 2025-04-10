@@ -11,8 +11,7 @@ With Axcel Jobs, users can:
 The objective is to offer a **centralized hub** for managing the entire job search pipeline with clarity and ease.
 
 ---
-
-🔗 **Live Preview:** [Axcel Jobs](https://job-tracker-client-plum.vercel.app/login)  
+🔗 **Live Preview:** [Axcel Jobs](https://jobvity.vercel.app/login)  
 🖥️ **Client Repo:** [jobtracker-client on GitHub](https://github.com/ankit00010/jobtracker-client.git)  
 🛠️ **Server Repo:** [jobtracker-server on GitHub](https://github.com/ankit00010/jobtracker-server.git)
 
