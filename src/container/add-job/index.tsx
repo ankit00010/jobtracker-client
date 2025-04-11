@@ -14,6 +14,7 @@ const AddJobContainer = () => {
 
   const statusOptions = [
     "Applied",
+    "Viewed",
     "Interview",
     "Offer",
     "Rejected",
