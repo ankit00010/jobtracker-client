@@ -29,6 +29,7 @@ const EditJobContainer = ({ id }: EditJobContainerProps) => {
   });
   const statusOptions = [
     "Applied",
+    "Viewed",
     "Interview",
     "Offer",
     "Rejected",
