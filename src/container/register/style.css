@@ -116,7 +116,38 @@
 .login-link a:hover {
   text-decoration: underline;
   color: #007bff;
-  
+}
+
+.google-signin-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+.google-btn {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 25px;
+  background-color: #fff;
+  border: 1px solid #dadce0;
+  border-radius: 100px;
+  font-weight: 600;
+  font-size: 16px;
+  color: #3c4043;
+  border: 2px solid gray;
+  cursor: pointer;
+  box-shadow: none;
+  transition: all 0.3s ease;
+}
+
+/* .google-btn:hover {
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+} */
+.google-btn:hover {
+  background-color: #202124;
+  color: #e8eaed;
+  border: none;
 }
 
 /* 📱 Responsive Design */

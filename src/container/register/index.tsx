@@ -5,6 +5,7 @@ import React, { useContext, useState } from "react";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import "./style.css";
 import { useRouter } from "next/navigation";
+import { FcGoogle } from "react-icons/fc";
 
 const RegisterContainer = () => {
   const router = useRouter();
@@ -50,7 +51,9 @@ const RegisterContainer = () => {
       registerUser();
     }
   };
-
+  const handleGoogleLogin = () => {
+    window.location.href = `${process.env.SERVER_URL}api/auth/google`;
+  };
   return (
     <div className="register-container">
       <div className="register-box">
@@ -95,6 +98,14 @@ const RegisterContainer = () => {
           Already have an account?{" "}
           <a onClick={() => router.push("/login")}>Log in</a>
         </p>
+     <div className="google-signin-container">
+                 <button className="google-btn" onClick={handleGoogleLogin}>
+                   <span className="icon">
+                     <FcGoogle size={30}/>
+                   </span>
+                   <span>Sign in with Google</span>
+                 </button>
+               </div>
       </div>
     </div>
   );
